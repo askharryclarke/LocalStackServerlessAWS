@@ -1,0 +1,35 @@
+service: HelloLocalStack
+
+plugins:
+  - serverless-localstack
+
+provider:
+  name: aws
+  runtime: python3.6
+#  stage: local
+  region: us-east-1
+
+custom:
+  localstack:
+    host: http://localhost
+#    endpoints:
+#      S3: http://localhost:4572
+#      DynamoDB: http://localhost:4570
+#      CloudFormation: http://localhost:4581
+#      Elasticsearch: http://localhost:4571
+#      ES: http://localhost:4578
+#      SNS: http://localhost:4575
+#      SQS: http://localhost:4576
+#      Lambda: http://localhost:4574
+#      Kinesis: http://localhost:4568
+#    stages:
+#      - local
+
+resources:
+  HelloQueue:
+    Type: AWS::SQS::Queue
+    Properties:
+      DelaySeconds: 0
+      MaximumMessageSize: 262144
+      MessageRetentionPeriod: 300
+      QueueName: HelloQueue
