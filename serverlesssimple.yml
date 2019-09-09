@@ -1,0 +1,31 @@
+service: HelloLocalStack
+
+provider:
+  name: aws
+  runtime: python3.6
+#  stage: local
+#  region: us-east-1
+
+plugins:
+  - serverless-localstack
+
+custom:
+  localstack:
+    host: http://localhost
+    endpointFile: localstack_endpoints.json
+
+resources:
+  Resources:
+    HelloTable:
+      Type: 'AWS::DynamoDB::Table'
+      Properties:
+        AttributeDefinitions:
+          - AttributeName: id
+            AttributeType: S
+        KeySchema:
+          - AttributeName: id
+            KeyType: HASH
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+        TableName: HelloTable

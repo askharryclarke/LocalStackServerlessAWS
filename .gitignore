@@ -5,3 +5,5 @@ Pipfile.lock
 .serverless/
 node_modules/
 package-lock.json
+serverless.yml
+package.json
