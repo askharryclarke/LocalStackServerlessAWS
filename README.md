@@ -38,7 +38,7 @@ Once you receive the following message:
 > Ready.
 
 You can begin deploying your serverless stack, __make sure you receive the ready message
-before you attempt to launch the stack.__
+before you attempt to launch the stack.__ Open up a new terminal for this.
 
 > sls deploy
 
