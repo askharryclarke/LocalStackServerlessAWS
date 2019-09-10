@@ -4,5 +4,3 @@ Pipfile.lock
 .serverless/
 node_modules/
 workingfiles/
-package-lock-commandbus.json
-packagecommandbus.json
