@@ -3,8 +3,6 @@ Pipfile.lock
 .idea/
 .serverless/
 node_modules/
+workingfiles/
 package-lock-commandbus.json
-serverlesscommandbus.yml
-serverlesssimple.yml
-serverlessworkingFn.yml
 packagecommandbus.json
