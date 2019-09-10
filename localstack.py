@@ -2,6 +2,9 @@ from subprocess import call
 
 
 def main():
+    create_sqs_queue()
+    create_another_sqs_queue()
+    list_sqs_queues()
     list_dynamodb_tables()
 
 
