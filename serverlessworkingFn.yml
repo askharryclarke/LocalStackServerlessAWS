@@ -9,8 +9,8 @@ plugins:
 package:
   exclude:
     - Dockerfile
-    - package.json
-    - package-lock.json
+    - packagecommandbus.json
+    - package-lock-commandbus.json
     - .gitignore
     - setup.cfg
     - config/*

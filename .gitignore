@@ -1,9 +1,10 @@
-Pipfile
 Pipfile.lock
 .DS_Store
 .idea/
 .serverless/
 node_modules/
-package-lock.json
-serverless.yml
-package.json
+package-lock-commandbus.json
+serverlesscommandbus.yml
+serverlesssimple.yml
+serverlessworkingFn.yml
+packagecommandbus.json
